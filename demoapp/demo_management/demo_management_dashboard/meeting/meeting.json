@@ -1,0 +1,21 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Meeting status",
+   "width": "Full"
+  }
+ ],
+ "creation": "2023-03-12 12:06:22.537582",
+ "dashboard_name": "Meeting",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-03-12 12:06:22.537582",
+ "modified_by": "Administrator",
+ "module": "Demo Management",
+ "name": "Meeting",
+ "owner": "Administrator"
+}

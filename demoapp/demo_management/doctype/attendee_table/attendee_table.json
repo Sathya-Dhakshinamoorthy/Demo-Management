@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "creation": "2023-03-13 00:02:06.138330",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "email_id",
+  "attendee_name",
+  "is_invited",
+  "is_attended"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "is_invited",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Invited?",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "default": "0",
+   "fieldname": "is_attended",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Attended?",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attendee Mail-id",
+   "options": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "attendee_name",
+   "fieldtype": "Data",
+   "label": "Attendee Name"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-13 01:55:16.466462",
+ "modified_by": "Administrator",
+ "module": "Demo Management",
+ "name": "Attendee Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

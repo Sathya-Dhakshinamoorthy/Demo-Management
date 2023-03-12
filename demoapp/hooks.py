@@ -99,9 +99,15 @@ app_license = "MIT"
 #	"*": {
 #		"on_update": "method",
 #		"on_cancel": "method",
-#		"on_trash": "method"
+#		"on_trash": "method.api.usercreation"
 #	}
 # }
+
+doc_event = {
+    'User':{
+    "after-insert" : "meeting.api.usercreation"
+	}
+}
 
 # Scheduled Tasks
 # ---------------

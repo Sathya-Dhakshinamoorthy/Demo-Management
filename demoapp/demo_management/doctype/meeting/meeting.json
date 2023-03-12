@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MEET_ID=M.#####",
+ "creation": "2023-03-12 19:10:32.555303",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_title",
+  "date",
+  "from_time",
+  "to_time",
+  "agenda_column",
+  "meeting_purpose",
+  "status",
+  "section_break_l76ra",
+  "venue",
+  "section_break_3nswa",
+  "description",
+  "section_break",
+  "attendees",
+  "section_break_bcgc0",
+  "information_status",
+  "section_break_pa2mp",
+  "created_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting_title",
+   "fieldtype": "Data",
+   "label": "Meeting Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "From Time"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "To Time"
+  },
+  {
+   "fieldname": "agenda_column",
+   "fieldtype": "Column Break",
+   "label": "Agenda"
+  },
+  {
+   "fieldname": "meeting_purpose",
+   "fieldtype": "Data",
+   "label": "Meeting Purpose",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "default": "Assigned",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Assigned\nOn-Going\nCompleted\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_l76ra",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Geolocation",
+   "in_global_search": 1,
+   "label": "Venue"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Table",
+   "label": "Attendees",
+   "options": "Attendee Table"
+  },
+  {
+   "default": "Administrator",
+   "fieldname": "created_by",
+   "fieldtype": "Link",
+   "label": "Created By",
+   "options": "User",
+   "set_only_once": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_3nswa",
+   "fieldtype": "Section Break",
+   "label": "Description"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Table",
+   "label": "Description Table",
+   "options": "Description table"
+  },
+  {
+   "fieldname": "section_break_pa2mp",
+   "fieldtype": "Section Break",
+   "label": "Organizer"
+  },
+  {
+   "fieldname": "section_break_bcgc0",
+   "fieldtype": "Section Break",
+   "label": "Info"
+  },
+  {
+   "fieldname": "information_status",
+   "fieldtype": "Small Text",
+   "label": "Additional infromation",
+   "width": "50"
+  },
+  {
+   "fieldname": "section_break",
+   "fieldtype": "Section Break",
+   "label": "Attendee List"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-13 04:21:30.470266",
+ "modified_by": "Administrator",
+ "module": "Demo Management",
+ "name": "Meeting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
